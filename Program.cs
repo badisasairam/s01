@@ -4,7 +4,7 @@ namespace s01
 {
     class Program
     {
-        //         Declare and use a bool, int, double, char, string, and decimal type.
+        // Declare and use a bool, int, double, char, string, and decimal type.
         // Implement at least one loop
         // Implement at least one if or if-else branch with conditions
         // Implement a switch statement
@@ -16,58 +16,73 @@ namespace s01
         // Do not start with any existing application - build it from scratch, on your own, as you will demonstrate throughout the class.
         static void Main(string[] args)
         {
-            var expe = 0.0M;
-            
+            var expe = 0.0;
+            var name="";
             var income = 0.0M;
-            // var name = "";
-            var money = 1.0M;
-            // var str = "" ;
+            var money = 1.0;
+            var b = true;
+            Char s = 'j';
+            var i = 0;
+            
+        
             //Greet the user
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter the name:");
+            name = Console.ReadLine();
+            Console.WriteLine($"Hello {name}");
 
             // Take the income of the household
-            while (true)
+            while (b)
             {
                 Console.WriteLine("Enter the income");
                                         
                     Decimal inc = Decimal.Parse(Console.ReadLine());
                     income += inc;
-                     var s = Console.ReadLine(); 
-                     if(s == "q"){
+                    Console.WriteLine("If you want to exit press q: or n to continue");
+                     s = Char.Parse(Console.ReadLine());
+                     if(s == 'q'){
                          break;
                      }
                 
             }
-            String[] exp = new String[] { "vegetables", "fruits" };
-            for (int i = 0; i < exp.Length; i++)
+            Console.WriteLine($"You have Earned {income} Dollars this month \n");
+            Console.WriteLine("Enter the things on which you have spent money");
+            String[] exp = new String[] { "vegetables", "fruits","Electronics" };
+            for ( i = 0; i < exp.Length; i++)
             {
-                Console.WriteLine($"{i}. {exp[i]}");
+                Console.WriteLine($"{i}. \t {exp[i]}");
             }
+            
             int select = int.Parse(Console.ReadLine());
-            Console.WriteLine("Different kinds of expenditures");
             switch (select)
             {
                 case 0:
-                    money = 20.0m;
+                    money = 20.0;
                     expe += money;
                     break;
                 case 1:
-                    money = 8.0m;
+                    money = 8.0;
+                    expe += money;
+                    break;
+                case 2:
+                    Console.WriteLine("How much did you spent on electronics");
+                    money = double.Parse(Console.ReadLine());
                     expe += money;
                     break;
             }
-            Console.WriteLine($"Expenditures are {expe}");
-            Console.WriteLine($"Total savings are: {totalSavings()}");
+            
+            Console.WriteLine($"You have spent {expe} dollars");
+            Console.WriteLine($"Your savings are: {totalSavings()}");
 
 
             Decimal totalSavings()
             {
                 var sav = 0.0M;
-                if (income > expe)
+                Decimal e = (Decimal)(expe);
+                if (income > e)
                 {
-                    Console.WriteLine("You have savings");
-                    sav = income - expe;
-                    Console.WriteLine($"The savings are {sav}");
+                    Console.WriteLine("");
+                    Console.WriteLine("Hola! You have savings for this month");
+                    sav = income - e;
                 }
                 else
                 {
@@ -76,9 +91,7 @@ namespace s01
                 return sav;
             }
 
-
-
-
-        }
+        
     }
+}
 }
