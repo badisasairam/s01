@@ -2,3 +2,10 @@ C:\Users\S534148\Documents\44663\s01\obj\Debug\netcoreapp2.2\s01.csprojAssemblyR
 C:\Users\S534148\Documents\44663\s01\obj\Debug\netcoreapp2.2\s01.csproj.CoreCompileInputs.cache
 C:\Users\S534148\Documents\44663\s01\obj\Debug\netcoreapp2.2\s01.AssemblyInfoInputs.cache
 C:\Users\S534148\Documents\44663\s01\obj\Debug\netcoreapp2.2\s01.AssemblyInfo.cs
+C:\Users\S534148\Documents\44663\s01\bin\Debug\netcoreapp2.2\s01.deps.json
+C:\Users\S534148\Documents\44663\s01\bin\Debug\netcoreapp2.2\s01.runtimeconfig.json
+C:\Users\S534148\Documents\44663\s01\bin\Debug\netcoreapp2.2\s01.runtimeconfig.dev.json
+C:\Users\S534148\Documents\44663\s01\bin\Debug\netcoreapp2.2\s01.dll
+C:\Users\S534148\Documents\44663\s01\bin\Debug\netcoreapp2.2\s01.pdb
+C:\Users\S534148\Documents\44663\s01\obj\Debug\netcoreapp2.2\s01.dll
+C:\Users\S534148\Documents\44663\s01\obj\Debug\netcoreapp2.2\s01.pdb
