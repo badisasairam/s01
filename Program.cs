@@ -19,29 +19,24 @@ namespace s01
             var expe = 0.0M;
             
             var income = 0.0M;
-            var name = "";
+            // var name = "";
             var money = 1.0M;
-            var str = "" ;
+            // var str = "" ;
             //Greet the user
             Console.WriteLine("Hello World!");
 
             // Take the income of the household
             while (true)
             {
-                Console.WriteLine("Enter the income of the household or q: to quit");
-                var s = Console.ReadLine();
-                if (s == "q")
-                {
-                    Console.WriteLine("You can exit and enter the expenditures");
-                    break;
-                }
-
-                else
-                {
+                Console.WriteLine("Enter the income");
+                                        
                     Decimal inc = Decimal.Parse(Console.ReadLine());
                     income += inc;
-                    break;
-                }
+                     var s = Console.ReadLine(); 
+                     if(s == "q"){
+                         break;
+                     }
+                
             }
             String[] exp = new String[] { "vegetables", "fruits" };
             for (int i = 0; i < exp.Length; i++)
